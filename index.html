@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="rootbreakerlogo.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RootBreaker | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="terminal">
+    <h1>root@breaker:~$ <span id="typed-text"></span><span class="cursor">|</span></h1>
+    
+    <section>
+      <h2>[ About Me ]</h2>
+      <p>Alias: <strong>RootBreaker</strong><br>
+         Role: Cybersecurity Enthusiast | VAPT | Bug Bounty Hunter<br>
+         Motto: Hack. Learn. Repeat.</p>
+    </section>
+
+    <section>
+      <h2>[ Projects ]</h2>
+      <ul>
+        <li>🛡️ Web App Pentest – SampleCorp</li>
+        <li>🔍 Recon Automation Tool – RootBreakerRecon</li>
+        <li>🐞 Bug Reports – Hall of Fame mentions</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>[ Skills ]</h2>
+      <p>CEH, C|PENT, Burp Suite, OWASP Top 10, Python (Basics), Wireshark, Nmap</p>
+    </section>
+
+    <section>
+      <h2>[ Contact ]</h2>
+      <p>Email: rootbreaker@protonmail.com<br>
+         GitHub: <a href="https://github.com/rootbreaker" target="_blank">github.com/rootbreaker</a><br>
+         LinkedIn: <a href="https://linkedin.com/in/rootbreaker" target="_blank">linkedin.com/in/rootbreaker</a></p>
+    </section>
+
+    <footer>
+      <p>© 2025 RootBreaker | Stay Anonymous.</p>
+    </footer>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const text = "Portfolio";
+      const typingSpeed = 150; // milliseconds per letter
+      let i = 0;
+
+      function typeWriter() {
+        if (i < text.length) {
+          document.getElementById("typed-text").textContent += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, typingSpeed);
+        }
+      }
+
+      typeWriter();
+    });
+  </script>
+</body>
+</html>
+
